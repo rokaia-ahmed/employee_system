@@ -34,7 +34,12 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         labelText: widget.labelText,
         hintText: widget.hintText,
         hintStyle: TextStyles.font10GreyW400,
-       labelStyle:TextStyles.font10BlueW400,
+       labelStyle:WidgetStateTextStyle.resolveWith((Set<WidgetState> states) {
+         if (states.contains(WidgetState.focused)) {
+           return TextStyles.font10BlueW400;
+         }
+         return TextStyles.font10GreyW400;
+       }),
         border:OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(
@@ -56,8 +61,8 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         suffixIcon: widget.obscureText??false
             ? IconButton(
           icon: Icon(
-            _obscureText ? Icons.visibility_off : Icons.visibility,
-            color: Colors.grey,
+            _obscureText ? Icons.visibility_off_outlined : Icons.visibility_outlined,
+            color: Colors.black.withValues(alpha: 0.7),
           ),
           onPressed: () {
             setState(() {

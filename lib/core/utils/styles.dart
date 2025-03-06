@@ -27,8 +27,8 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     color: LightColors.primary,
   );
-  static TextStyle  font14GreyW400= TextStyle(
-    fontSize: 14.sp,
+  static TextStyle  font12GreyW400= TextStyle(
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     color: LightColors.greyColor,
   );

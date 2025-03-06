@@ -29,8 +29,8 @@ class WelcomeMsg extends StatelessWidget {
           ],
         ),
         Text('Hello there, login to continue',
-          style: TextStyles.font14GreyW400,
-        )
+          style: TextStyles.font12GreyW400,
+        ),
       ],
     );
   }

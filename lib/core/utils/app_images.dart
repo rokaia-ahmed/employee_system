@@ -8,4 +8,6 @@ class AppSvgs {
   static const String logo =  '$svgsPath/logo.svg';
 }
 
-class AppIcons {}
+class AppIcons {
+  static const String google =  '$iconsPath/google.svg';
+}
