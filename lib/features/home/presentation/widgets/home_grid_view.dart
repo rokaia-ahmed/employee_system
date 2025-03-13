@@ -12,15 +12,15 @@ class HomeGridView extends StatelessWidget {
       itemCount: 4,
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
-      padding: EdgeInsets.all(7),
+      padding: EdgeInsets.symmetric(horizontal: 7.w,vertical: 7.h),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 15,
         mainAxisSpacing: 15,
-        childAspectRatio: 1.3,
+        childAspectRatio: 1.45.h,
       ),
       itemBuilder: (context,index) =>Container(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),
@@ -52,6 +52,7 @@ class HomeGridView extends StatelessWidget {
             Text('10:20 AM',
               style: TextStyles.font18BlackBold,
             ),
+            SizedBox(height: 2,),
             Text('On Time',
               style:TextStyles.font14BlackW400 ,
             ),
