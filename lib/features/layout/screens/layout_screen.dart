@@ -4,6 +4,7 @@ import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 import '../../holiday_list/presentation/screens/holiday_list_screen.dart';
 import '../../home/presentation/screens/home_screen.dart';
 import '../../leaves/presentation/screens/leaves_screen.dart';
+import '../../profile/presentation/screens/profile_screen.dart';
 import '../../team_members/presentation/screens/team_members_screen.dart';
 
 class LayoutScreen extends StatefulWidget {
@@ -29,7 +30,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
     LeavesScreen(),
     TeamMembersScreen(),
     HolidayListScreen(),
-    Container(color: Colors.yellow,),
+    ProfileScreen(),
   ];
 
   @override
