@@ -39,7 +39,7 @@ class HomeListView extends StatelessWidget {
               children: [
                 Text(
                   'Check In',
-                  style: TextStyles.font14BlackBold,
+                  style: TextStyles.font14BlackW500,
                 ),
                 SizedBox(
                   height: 2,

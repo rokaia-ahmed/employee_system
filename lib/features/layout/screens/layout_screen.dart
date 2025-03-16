@@ -3,6 +3,7 @@ import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 
 import '../../home/presentation/screens/home_screen.dart';
 import '../../leaves/presentation/screens/leaves_screen.dart';
+import '../../team_members/presentation/screens/team_members_screen.dart';
 
 class LayoutScreen extends StatefulWidget {
   const LayoutScreen({super.key});
@@ -25,7 +26,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   final screens = <Widget>[
     HomeScreen(),
     LeavesScreen(),
-    Container(color: Colors.grey,),
+    TeamMembersScreen(),
     Container(color: Colors.blue,),
     Container(color: Colors.yellow,),
   ];

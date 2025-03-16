@@ -24,9 +24,13 @@ class TextStyles {
     fontSize: 15.sp,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle  font14BlackBold = TextStyle(
+  static TextStyle  font14BlackW500 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,
+  );
+  static TextStyle  font14BlackW700 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
   );
   static TextStyle  font12BlackW400 = TextStyle(
     fontSize: 12.sp,
