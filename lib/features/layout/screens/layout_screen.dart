@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 
+import '../../holiday_list/presentation/screens/holiday_list_screen.dart';
 import '../../home/presentation/screens/home_screen.dart';
 import '../../leaves/presentation/screens/leaves_screen.dart';
 import '../../team_members/presentation/screens/team_members_screen.dart';
@@ -27,7 +28,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
     HomeScreen(),
     LeavesScreen(),
     TeamMembersScreen(),
-    Container(color: Colors.blue,),
+    HolidayListScreen(),
     Container(color: Colors.yellow,),
   ];
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/routing/routes.dart';
 import '../../../../core/utils/styles.dart';
 
 class CustomListView extends StatelessWidget {
@@ -18,6 +19,9 @@ class CustomListView extends StatelessWidget {
             ),
         itemBuilder: (context,index)=>
             ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.attendanceScreen);
+              },
               leading: CircleAvatar(
                 radius: 27,
                 backgroundImage: NetworkImage('https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?rs=1&pid=ImgDetMain'),

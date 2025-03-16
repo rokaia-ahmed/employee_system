@@ -1,5 +1,6 @@
 import 'package:employee_system/core/routing/routes.dart';
 import 'package:employee_system/features/layout/screens/layout_screen.dart';
+import 'package:employee_system/features/team_members/presentation/screens/attendance_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/sign_in/presentation/screens/sign_in_screen.dart';
@@ -16,6 +17,8 @@ class AppRouter{
 
      case Routes.layout:
        return MaterialPageRoute(builder: (_)=>const LayoutScreen());
+     case Routes.attendanceScreen:
+       return MaterialPageRoute(builder: (_)=>const AttendanceScreen());
    }
    return null;
  }
