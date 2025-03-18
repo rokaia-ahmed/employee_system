@@ -4,4 +4,6 @@ class Routes{
   static const String layout = '/layout';
   static const String attendanceScreen = '/attendanceScreen';
   static const String myProfileScreen = '/myProfileScreen';
+  static const String settingScreen = '/settingScreen';
+  static const String notificationScreen = '/notificationScreen';
 }

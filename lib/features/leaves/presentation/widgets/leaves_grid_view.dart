@@ -21,7 +21,7 @@ class LeavesGridView extends StatelessWidget {
         crossAxisCount: 2,
         crossAxisSpacing: 12.w,
         mainAxisSpacing: 15.h,
-        childAspectRatio: 1.6.h,
+        childAspectRatio: 1.44.h,
       ),
       itemCount: 4,
       itemBuilder: (context,index)=>

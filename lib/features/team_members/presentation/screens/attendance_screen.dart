@@ -45,7 +45,7 @@ class AttendanceScreen extends StatelessWidget {
                       children: [
                         Container(
                           width: 10.w,
-                          height: 80.h,
+                          height: 90.h,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.only(

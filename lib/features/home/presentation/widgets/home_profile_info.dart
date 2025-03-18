@@ -1,3 +1,4 @@
+import 'package:employee_system/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/styles.dart';
@@ -21,10 +22,12 @@ class HomeProfileInfo extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('John Doe',
+            Text(
+              'John Doe',
               style: TextStyles.font18BlackW500,
             ),
-            Text('Lead UI/UX Designer',
+            Text(
+              'Lead UI/UX Designer',
               style: TextStyles.font14BlackW400,
             ),
           ],
@@ -33,7 +36,10 @@ class HomeProfileInfo extends StatelessWidget {
         IconButton(
           iconSize: 30,
           icon: Icon(Icons.notifications_none_sharp),
-          onPressed: () {  },),
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.notificationScreen);
+          },
+        ),
       ],
     );
   }

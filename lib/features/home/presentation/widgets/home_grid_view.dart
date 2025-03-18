@@ -17,7 +17,7 @@ class HomeGridView extends StatelessWidget {
         crossAxisCount: 2,
         crossAxisSpacing: 15,
         mainAxisSpacing: 15,
-        childAspectRatio: 1.45.h,
+        childAspectRatio: 1.2.h,
       ),
       itemBuilder: (context,index) =>Container(
         padding: EdgeInsets.all(15),

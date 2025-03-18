@@ -67,7 +67,9 @@ class ProfileScreen extends StatelessWidget {
             ProfileListTile(
               icon: Icons.settings_outlined,
               title: 'Settings',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, Routes.settingScreen);
+              },
             ),
             Divider(
               color: Colors.grey.shade100,
