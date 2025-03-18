@@ -1,6 +1,7 @@
 import 'package:employee_system/core/utils/colors/light_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../core/routing/routes.dart';
 import '../../../../core/utils/styles.dart';
 import '../widgets/leaves_grid_view.dart';
 import '../widgets/leaves_tab_bar.dart';
@@ -39,7 +40,9 @@ class LeavesScreen extends StatelessWidget {
                      style: TextStyles.font20BlackBold,
                      ),
                      InkWell(
-                       onTap: (){},
+                       onTap: (){
+                         Navigator.pushNamed(context, Routes.applyLeave);
+                       },
                        child: Container(
                          padding: EdgeInsets.all(1),
                             decoration: BoxDecoration(
@@ -72,6 +75,9 @@ class LeavesScreen extends StatelessWidget {
                         TeamLeaveView(),
                       ],
                   ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
               ],
             ),

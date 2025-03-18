@@ -1,4 +1,5 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:employee_system/core/utils/colors/light_colors.dart';
 import 'package:flutter/material.dart';
 import '../../holiday_list/presentation/screens/holiday_list_screen.dart';
 import '../../home/presentation/screens/home_screen.dart';
@@ -37,7 +38,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
     return Scaffold(
       bottomNavigationBar:
       CurvedNavigationBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: LightColors.primary,
         items:iconList.map((e) => Icon(e)
         ).toList(),
         onTap: (index) {

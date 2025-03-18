@@ -1,5 +1,6 @@
 import 'package:employee_system/core/routing/routes.dart';
 import 'package:employee_system/features/layout/screens/layout_screen.dart';
+import 'package:employee_system/features/leaves/presentation/screens/apply_leave.dart';
 import 'package:employee_system/features/profile/presentation/screens/my_profile_screen.dart';
 import 'package:employee_system/features/profile/presentation/screens/setting_screen.dart';
 import 'package:employee_system/features/team_members/presentation/screens/attendance_screen.dart';
@@ -28,6 +29,8 @@ class AppRouter{
        return MaterialPageRoute(builder: (_)=>const SettingScreen());
      case Routes.notificationScreen:
        return MaterialPageRoute(builder: (_)=>const NotificationScreen());
+     case Routes.applyLeave:
+       return MaterialPageRoute(builder: (_)=>const ApplyLeave());
    }
    return null;
  }
