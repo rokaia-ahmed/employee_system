@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.0.17
   stylish_bottom_bar: ^1.1.0
   intl: ^0.20.2
+  curved_navigation_bar: ^1.0.6
 
 flutter_native_splash:
   background_image: "assets/images/splash.png"

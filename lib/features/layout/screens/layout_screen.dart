@@ -1,6 +1,5 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
-
 import '../../holiday_list/presentation/screens/holiday_list_screen.dart';
 import '../../home/presentation/screens/home_screen.dart';
 import '../../leaves/presentation/screens/leaves_screen.dart';
@@ -21,7 +20,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
     Icons.home,
     Icons.calendar_today,
     Icons.group,
-    Icons.notifications,
+    Icons.celebration_rounded,
     Icons.person,
   ];
 
@@ -36,22 +35,16 @@ class _LayoutScreenState extends State<LayoutScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: StylishBottomBar(
-        currentIndex: _bottomNavIndex,
-        onTap: (index){
+      bottomNavigationBar:
+      CurvedNavigationBar(
+        backgroundColor: Colors.blue,
+        items:iconList.map((e) => Icon(e)
+        ).toList(),
+        onTap: (index) {
           setState(() {
-              _bottomNavIndex = index;
+            _bottomNavIndex = index;
           });
         },
-        items:iconList.map((e) => BottomBarItem(
-            icon: Icon(e),
-            title: Text(''),
-          selectedColor: Colors.blue,
-        ),
-        ).toList(),
-        option: AnimatedBarOptions(
-        iconStyle: IconStyle.simple,
-        ),
       ),
       body: screens[_bottomNavIndex],
     );

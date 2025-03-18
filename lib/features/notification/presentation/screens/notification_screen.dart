@@ -32,12 +32,13 @@ class NotificationScreen extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: ListView.separated(
-        padding:EdgeInsets.symmetric(horizontal: 15.w,vertical:5.h),
+          padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 5.h),
           itemBuilder: (context, index) => Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.blue.shade100.withValues(alpha: 0.2),
+                    backgroundColor:
+                        Colors.blue.shade100.withValues(alpha: 0.2),
                     child: Icon(
                       Icons.perm_identity,
                       color: Colors.blue,
@@ -57,17 +58,23 @@ class NotificationScreen extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 2.h,),
+                        SizedBox(
+                          height: 2.h,
+                        ),
                         Text(
                           'You just update your profile picture',
                           style: TextStyles.font13BlackW400,
                         ),
-                        SizedBox(height: 4.h,),
+                        SizedBox(
+                          height: 4.h,
+                        ),
                         Text(
                           'April 12, 2023 at 22:22 Pm',
                           style: TextStyles.font10GreyW400,
                         ),
-                        SizedBox(height: 5.h,),
+                        SizedBox(
+                          height: 5.h,
+                        ),
                       ],
                     ),
                   ),
