@@ -71,7 +71,7 @@ class ApplyLeave extends StatelessWidget {
               CustomDefaultButton(
                   onPressed: (){},
                   text: 'Apply Leave',
-                  isPressed: true)
+                  isPressed: true),
             ],
           ),
         ),
