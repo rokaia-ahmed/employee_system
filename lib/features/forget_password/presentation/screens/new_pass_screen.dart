@@ -54,7 +54,7 @@ class NewPassScreen extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, Routes.signIn);
                 },
-                text: 'Continue',
+                text: 'Update Password',
                 isPressed: true)
           ],
         ),
