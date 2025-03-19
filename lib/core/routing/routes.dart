@@ -7,4 +7,7 @@ class Routes{
   static const String settingScreen = '/settingScreen';
   static const String notificationScreen = '/notificationScreen';
   static const String applyLeave = 'applyLeave';
+  static const String forgetPassword = 'forgetPassword';
+  static const String otpScreen = 'otpScreen';
+  static const String newPass = 'newPassword';
 }

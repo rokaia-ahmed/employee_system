@@ -1,4 +1,6 @@
 import 'package:employee_system/core/routing/routes.dart';
+import 'package:employee_system/features/forget_password/presentation/screens/forget_password_screen.dart';
+import 'package:employee_system/features/forget_password/presentation/screens/otp_screen.dart';
 import 'package:employee_system/features/layout/screens/layout_screen.dart';
 import 'package:employee_system/features/leaves/presentation/screens/apply_leave.dart';
 import 'package:employee_system/features/profile/presentation/screens/my_profile_screen.dart';
@@ -6,6 +8,7 @@ import 'package:employee_system/features/profile/presentation/screens/setting_sc
 import 'package:employee_system/features/team_members/presentation/screens/attendance_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../features/forget_password/presentation/screens/new_pass_screen.dart';
 import '../../features/notification/presentation/screens/notification_screen.dart';
 import '../../features/sign_in/presentation/screens/sign_in_screen.dart';
 import '../../features/sign_up/presentation/screens/sign_up_screen.dart';
@@ -31,6 +34,12 @@ class AppRouter{
        return MaterialPageRoute(builder: (_)=>const NotificationScreen());
      case Routes.applyLeave:
        return MaterialPageRoute(builder: (_)=>const ApplyLeave());
+     case Routes.forgetPassword:
+       return MaterialPageRoute(builder: (_)=>const ForgetPasswordScreen());
+     case Routes.otpScreen:
+       return MaterialPageRoute(builder: (_)=>const OtpScreen());
+     case Routes.newPass:
+       return MaterialPageRoute(builder: (_)=>const NewPassScreen());
    }
    return null;
  }

@@ -32,7 +32,9 @@ class FormsAndLoginButton extends StatelessWidget {
         Align(
           alignment: Alignment.topRight,
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, Routes.forgetPassword);
+            },
             child: Text(
               'Forgot Password?',
               style: TextStyles.font13BlueW400,
