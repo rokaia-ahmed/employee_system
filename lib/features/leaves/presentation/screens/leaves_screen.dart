@@ -19,8 +19,9 @@ class LeavesScreen extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        stops: [0.65,0.3],
+       // stops: [0.65,0.3],
         colors: [
+        Colors.white,
         Colors.white,
           LightColors.greyColor.withValues(alpha: 0.16),
     ],
